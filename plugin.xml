@@ -1,5 +1,8 @@
 <plugin id="org.example.d4p.epub-custom"> <!-- id should match the plugin folder name, which should be a Java-style reverse Internet domain name, such as shown here -->
-  
+
+  <feature extension="package.support.name" value="Eliot Kimber"/>
+  <feature extension="package.support.email" value="ekimber@contrext.com"/>
+
   <extension id="xsl.transtype-epub-custom"/> <!-- update the text after the first hyphen to match your custom transtype -->
 
   <require plugin="org.dita.xhtml"/> <!-- require the base xhtml plugin from the DITA-OT, because most of the epub processing is based off of this -->
