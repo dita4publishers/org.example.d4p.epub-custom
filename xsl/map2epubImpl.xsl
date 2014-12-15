@@ -30,7 +30,7 @@
        
        ============================================================== -->
 
-  <xsl:import href="../../org.dita4publishers.epub/xsl/map2epubImpl.xsl"/> <!-- import the D4P epub transform -->
+  <xsl:import href="plugin:org.dita4publishers.epub:xsl/map2epubImpl.xsl"/> <!-- import the D4P epub transform -->
 
   <xsl:param name="paramNameinXSLT" as="xs:string" select="'not-set'"/>
 
