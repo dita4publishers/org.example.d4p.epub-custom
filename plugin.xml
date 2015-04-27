@@ -3,7 +3,8 @@
   <feature extension="package.support.name" value="Eliot Kimber"/>
   <feature extension="package.support.email" value="ekimber@contrext.com"/>
 
-  <extension id="xsl.transtype-epub-custom"/> <!-- update the text after the first hyphen to match your custom transtype -->
+  <extension-point id="xsl.transtype-epub-custom" name="Custom extension point"/> 
+  <!-- update the text after the first hyphen to match your custom transtype -->
 
   <require plugin="org.dita.xhtml"/> <!-- require the base xhtml plugin from the DITA-OT, because most of the epub processing is based off of this -->
   <require plugin="org.dita4publishers.common.mapdriven"/> <!-- the epub generation makes uses of the D4P mapdriven processing -->
