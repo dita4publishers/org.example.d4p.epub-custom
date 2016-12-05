@@ -8,11 +8,20 @@
                 xmlns:dc="http://purl.org/dc/elements/1.1/"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
+  <!-- Import the main EPUB transform. This will have the effect if including
+       any global EPUB extensions: -->
+  <xsl:import href="plugin:org.dita4publishers.epub:xsl/map2epub.xsl"/>
+  
+  <!-- Import your custom transform. This will be able to override anything
+       in the base EPUB transform.
+       
+    -->
   <xsl:import href="map2epubImpl.xsl"/> <!-- relative path to your custom stylesheet -->
-
+  
+  <!-- Update the @id attribute after the first hyphen to match your custom transtype -->
   <dita:extension id="xsl.transtype-epub-custom"   
     behavior="org.dita.dost.platform.ImportXSLAction" 
-    xmlns:dita="http://dita-ot.sourceforge.net"/> <!-- update the text after the first hyphen to match your custom transtype -->
+    xmlns:dita="http://dita-ot.sourceforge.net"/> 
 
 
 </xsl:stylesheet>

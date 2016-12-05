@@ -14,7 +14,7 @@
     >
 
     <antcall target="dita2epub">
-      <param name="args.xsl" value="${dita.dir}/plugins/org.example.d4p.epub-custom/xsl/map2epub_template.xsl"/>
+      <param name="args.xsl" value="${dita.plugin.org.example.d4p.epub-custom.dir}/xsl/map2epub_template.xsl"/>
     </antcall>
     
   </target> 

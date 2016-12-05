@@ -30,8 +30,6 @@
        
        ============================================================== -->
 
-  <xsl:import href="plugin:org.dita4publishers.epub:xsl/map2epubImpl.xsl"/> <!-- import the D4P epub transform -->
-
   <xsl:param name="paramNameinXSLT" as="xs:string" select="'not-set'"/>
 
   <!-- Example custom template; all this does is applies the next matching template to any element that is or is specialized from the base paragraph element in DITA 1.2 --> 
